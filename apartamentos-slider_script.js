@@ -1,18 +1,24 @@
-const slider = document.querySelector(".slider");
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
-let index = 0;
+document.querySelectorAll(".slide-container").forEach(container => {
+    const slider = container.querySelector(".slider");
+    const prev = container.querySelector(".prev");
+    const next = container.querySelector(".next");
 
-next.addEventListener("click", () => {
-    if (index < 6) { // Ajusta según la cantidad de imágenes -1
-        index++;
-        slider.style.transform = `translateX(-${index * 100}%)`;
-    }
-});
+    if (!slider || !prev || !next) return; // Evita errores si faltan elementos
 
-prev.addEventListener("click", () => {
-    if (index > 0) {
-        index--;
-        slider.style.transform = `translateX(-${index * 100}%)`;
-    }
+    let index = 0;
+    const slides = slider.children.length;
+
+    next.addEventListener("click", () => {
+        if (index < slides - 1) {
+            index++;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+    });
+
+    prev.addEventListener("click", () => {
+        if (index > 0) {
+            index--;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+    });
 });
