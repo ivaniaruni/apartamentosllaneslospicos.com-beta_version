@@ -50,7 +50,7 @@ ul li a:hover{
     text-shadow: 0px 0px 0.7px #181C14, 0px 0px 0.7px #181C14;
 }
 
-/* Submenú oculto */
+/* Hidden submenu */
 ul li ul{
     position: absolute;
     top: 100%;
@@ -63,7 +63,7 @@ ul li ul{
     z-index: 100;
 }
 
-/* Mostrar submenú al pasar el ratón */
+/* Show submenu on hover */
 ul li:hover > ul{
     display: block;
     opacity: 1;
@@ -82,15 +82,15 @@ ul li ul li a:hover{
     border-radius: 10px;
 }
 
-/* Limpiar flotados */
+/* Clean floats */
 ul::after {
     content: "";
     display: block;
     clear: both;
 }
 
-/* Estudio */
-.estudio{
+/* Study */
+.study{
     display: flex;
     align-items: center;
     vertical-align: center;
@@ -101,17 +101,17 @@ ul::after {
     width: 100%;
     height: 450px;
 }
-.estudio-text{
+.study-text{
     flex: 1;
     margin-left: 1.5%;
     margin-top: 3%;
     padding: 20px;
 }
-.estudio-text h1{
+.study-text h1{
     font-size: 26px;
     color: #333;
 }
-.estudio-text p{
+.study-text p{
     margin-top: 15px;
     width: 95%;
     font-size: 18px;
@@ -144,7 +144,7 @@ ul::after {
     border-radius: 10px;
 }
 
-/* Botones de navegación */
+/* Navigation buttons */
 .prev, .next{
     position: absolute;
     top: 50%;
@@ -162,7 +162,7 @@ ul::after {
 .prev:hover, .next:hover{
     background: rgba(0, 0, 0, 0.8);
 }
-.reservar{
+.reserve{
     margin-top: 20px;
     padding: 10px 20px;
     border: solid 1.5px #343830;
@@ -173,7 +173,7 @@ ul::after {
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
-.reservar:hover{
+.reserve:hover{
     color: #d9d7d7;
     background: #343830;
 }
@@ -184,8 +184,8 @@ hr{
     width: 20%;
 }
 
-/* Apartamentos 2 */
-.apartamento_2{
+/* Apartments 2 */
+.apartments_2{
     display: flex;
     align-items: center;
     vertical-align: center;
@@ -196,34 +196,34 @@ hr{
     width: 100%;
     height: 450px;
 }
-.apartamento_2-text{
+.apartments_2-text{
     flex: 1;
     margin-left: 2%;
     padding: 20px;
 }
-.apartamento_2-text h1{
+.apartments_2-text h1{
     font-size: 26px;
     color: #333;
 }
-.apartamento_2-text p{
+.apartments_2-text p{
     margin-top: 15px;
     width: 100%;
     font-size: 18px;
     color: #666;
     line-height: 1.5;
 }
-.apartamento_2 .slide-container{
+.apartments_2 .slide-container{
     margin-right: 1%;
 }
-.apartamento_2 #vertical{
+.apartments_2 #vertical{
     margin-top: 10.2%;
     width: 17.8%;
     margin-left: 3%;
     height: 500px;
 }
 
-/* Apartamentos 4 */
-.apartamento_4{
+/* Apartments 4 */
+.apartments_4{
     display: flex;
     align-items: center;
     vertical-align: center;
@@ -234,36 +234,36 @@ hr{
     width: 100%;
     height: 450px;
 }
-.apartamento_4-text{
+.apartments_4-text{
     flex: 1;
     margin-left: 2%;
     margin-top: 1%;
     padding: 20px;
 }
-.apartamento_4-text h1{
+.apartments_4-text h1{
     width: 90%;
     font-size: 26px;
     color: #333;
 }
-.apartamento_4-text p{
+.apartments_4-text p{
     margin-top: 15px;
     width: 100%;
     font-size: 18px;
     color: #666;
     line-height: 1.5;
 }
-.apartamento_4 .slide-container{
+.apartments_4 .slide-container{
     margin-right: 1%;
 }
-.apartamento_4 #vertical{
+.apartments_4 #vertical{
     margin-top: 10.2%;
     width: 17.8%;
     margin-left: 3%;
     height: 500px;
 }
 
-/* Apartamentos 4-6 */
-.apartamento_4-6{
+/* Apartments 4-6 */
+.apartments_4-6{
     display: flex;
     align-items: center;
     vertical-align: center;
@@ -275,32 +275,32 @@ hr{
     width: 100%;
     height: 400px;
 }
-.apartamento_4-6-text{
+.apartments_4-6-text{
     flex: 1;
     margin-left: 2%;
     margin-top: 1%;
     padding: 20px;
 }
-.apartamento_4-6-text h1{
+.apartments_4-6-text h1{
     width: 100%;
     font-size: 26px;
     color: #333;
 }
-.apartamento_4-6-text p{
+.apartments_4-6-text p{
     margin-top: 15px;
     width: 100%;
     font-size: 18px;
     color: #666;
     line-height: 1.5;
 }
-.apartamento_4-6 #vertical{
+.apartments_4-6 #vertical{
     margin-top: 3%;
     width: 17.7%;
     height: 400px;
 }
 
-/* Apartamentos 4-6 Alquiler */
-.apartamento_4-6_alquiler{
+/* Apartments 4-6 Rent */
+.apartments_4-6_rent{
     display: flex;
     align-items: center;
     vertical-align: center;
@@ -311,25 +311,25 @@ hr{
     width: 100%;
     height: 450px;
 }
-.apartamento_4-6_alquiler-text{
+.apartments_4-6_rent-text{
     flex: 1;
     margin-left: 2%;
     margin-top: 1%;
     padding: 20px;
 }
-.apartamento_4-6_alquiler-text h1{
+.apartments_4-6_rent-text h1{
     width: 60%;
     font-size: 26px;
     color: #333;
 }
-.apartamento_4-6_alquiler-text p{
+.apartments_4-6_rent-text p{
     margin-top: 15px;
     width: 90%;
     font-size: 18px;
     color: #666;
     line-height: 1.5;
 }
-.apartamento_4-6_alquiler .slide-container{
+.apartments_4-6_rent .slide-container{
     margin-left: 12%;
 }
 
@@ -348,9 +348,8 @@ footer a{
     color: white;
     text-decoration: none;
     margin: 0 10px;
-    transition: font-weight 0.3s;
+    transition: text-shadow 0.3s;
 }
-
 footer a:hover{
-    font-weight: 600;
+    text-shadow: 0px 0px 0.7px white, 0px 0px 0.7px white;
 }
