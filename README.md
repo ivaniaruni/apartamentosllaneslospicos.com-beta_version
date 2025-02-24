@@ -1,6 +1,6 @@
 # Los Picos Apartments
 
-This project is a website for **Los Picos Apartments**, a site offering rural apartments in Porrúa, Llanes. Currently, the website presents information about the different types of available apartments and their features.
+This project is a website for Los Picos Apartments, a site offering rural apartments in Porrúa, Llanes. Currently, the website presents information about the different types of available apartments and their features.
 
 ## 🚀 Technologies Used
 
@@ -38,6 +38,8 @@ If you have any suggestions or want to contribute, feel free to reach out!
 
 ## 📜 License
 
-This project is for **viewing purposes only**. The source code **cannot be used, modified, or distributed** without explicit permission.
+This project is for viewing purposes only. The source code cannot be used, modified, or distributed without explicit permission.
 
-📌 *This project is still in development and will be updated with more functionalities in the future.*
+## ⚠️ Project Status
+
+🚧 This project is still in development and is being updated daily with new features and improvements.
