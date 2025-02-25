@@ -32,7 +32,8 @@ If you have any suggestions or want to contribute, feel free to reach out!
 🐦 Twitter: [https://x.com/iaruni_kbron]  
 📸 Instagram: [https://www.instagram.com/ivan_iaruni/]  
 💻 LinkedIn: [https://www.linkedin.com/in/ivan-iarunichev-83056b307/]  
-🔗 Linktree: [https://linktr.ee/ivanzd_x](https://linktr.ee/ivanzd_x)  
+🔗 Linktree: [https://linktr.ee/ivanzd_x](https://linktr.ee/ivanzd_x]
+📝 Dribbble: [https://dribbble.com/IvanIaru]
 
 ---
 
