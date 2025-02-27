@@ -1,24 +1,53 @@
-document.querySelectorAll(".slide-container").forEach(container => {
-    const slider = container.querySelector(".slider");
-    const prev = container.querySelector(".prev");
-    const next = container.querySelector(".next");
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("reservation-modal");
+    const closeModal = document.querySelector(".close");
+    const sendButton = document.getElementById("send-btn");
+    const phoneInput = document.getElementById("phone-number");
+    const reserveButtons = document.querySelectorAll(".reserve");
+    const openReservation = document.getElementById("open-reservation");
 
-    if (!slider || !prev || !next) return; // Evita errores si faltan elementos
+    modal.style.display = "none";
 
-    let index = 0;
-    const slides = slider.children.length;
+    function openModal() {
+        modal.classList.remove("hide");
+        modal.style.display = "flex";
+        setTimeout(() => modal.classList.add("show"), 10);
+    }
 
-    next.addEventListener("click", () => {
-        if (index < slides - 1) {
-            index++;
-            slider.style.transform = `translateX(-${index * 100}%)`;
+    function closeModalWithAnimation() {
+        modal.classList.remove("show"); 
+        modal.classList.add("hide");
+
+        setTimeout(() => {
+            modal.style.display = "none";
+            modal.classList.remove("hide");
+        }, 300);
+    }
+
+    reserveButtons.forEach(button => {
+        button.addEventListener("click", openModal);
+    });
+
+    openReservation.addEventListener("click", (event) => {
+        event.preventDefault();
+        openModal();
+    });
+
+    closeModal.addEventListener("click", closeModalWithAnimation);
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            closeModalWithAnimation();
         }
     });
 
-    prev.addEventListener("click", () => {
-        if (index > 0) {
-            index--;
-            slider.style.transform = `translateX(-${index * 100}%)`;
+    sendButton.addEventListener("click", () => {
+        const phoneNumber = phoneInput.value.trim();
+        const phoneRegex = /^[0-9]{9,15}$/;
+        if (phoneRegex.test(phoneNumber)) {
+            console.log("Número guardado:", phoneNumber);
+            alert("Número guardado correctamente.");
+        } else {
+            alert("Por favor, ingresa un número de teléfono válido.");
         }
     });
 });

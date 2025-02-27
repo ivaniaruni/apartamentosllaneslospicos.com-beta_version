@@ -34,7 +34,7 @@
                     <li><a href="#">Pensando en los Niños</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#" id="open-reservation">Contacto</a></li>
         </ul>
     </nav>
     <header>
@@ -166,12 +166,27 @@
                 <button class="reserve">Reservar</button>
             </div>
         </div>
+
+        <!-- Reserve/Contact Block -->
+        <div id="reservation-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Reserva tu estancia</h2>
+                <input type="tel" id="phone-number" placeholder="Introduce el número aquí" required>
+                <p>Para reservar, contáctanos a través de:</p>
+                <p><strong>Teléfono:</strong> +34 123 456 789</p>
+                <p><strong>Email:</strong> contacto@apartamentoslospicos.com</p>
+                <p><strong>Dirección:</strong> Porrúa, Llanes, Asturias</p>
+                <button id="send-btn">Enviar</button>
+            </div>
+        </div>       
     </header>
     <footer>
         <p>© 2025 Apartamentos Los Picos</p>
         <a href="#">Aviso Legal</a> | <a href="#">Política de Privacidad</a>
     </footer>
 
+    <script src="reserve-contact-button_script.js"></script>
     <script src="apartments-slider_script.js"></script>
 </body>
 </html>
