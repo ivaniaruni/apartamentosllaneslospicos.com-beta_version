@@ -1,28 +1,24 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("reservation-modal");
-    const closeModal = document.querySelector(".close");
-    const closeBtn = document.getElementById("close-btn");
-    const reserveButtons = document.querySelectorAll(".reserve");
-    
-    modal.style.display = "none";
+document.querySelectorAll(".slide-container").forEach(container => {
+    const slider = container.querySelector(".slider");
+    const prev = container.querySelector(".prev");
+    const next = container.querySelector(".next");
 
-    reserveButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            modal.style.display = "flex";
-        });
+    if (!slider || !prev || !next) return; // Evita errores si faltan elementos
+
+    let index = 0;
+    const slides = slider.children.length;
+
+    next.addEventListener("click", () => {
+        if (index < slides - 1) {
+            index++;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
     });
 
-    closeModal.addEventListener("click", () => {
-        modal.style.display = "none";
-    });
-
-    closeBtn.addEventListener("click", () => {
-        modal.style.display = "none";
-    });
-
-    window.addEventListener("click", (event) => {
-        if (event.target === modal) {
-            modal.style.display = "none";
+    prev.addEventListener("click", () => {
+        if (index > 0) {
+            index--;
+            slider.style.transform = `translateX(-${index * 100}%)`;
         }
     });
 });
