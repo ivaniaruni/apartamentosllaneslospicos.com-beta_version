@@ -417,7 +417,7 @@ hr{
     color: #fff;
 }
 
-.img-modal {
+.img-modal{
     position: fixed;
     top: 0;
     left: 0;
@@ -428,7 +428,6 @@ hr{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .img-modal-content{
     width: 70%;
     height: 70%;
