@@ -389,7 +389,7 @@ hr{
     position: absolute;
     right: 20px;
     top: 10px;
-    font-size: 24px;
+    font-size: 26px;
     cursor: pointer;
     color: #343830;
     background: none;
@@ -398,8 +398,7 @@ hr{
     transition: color 0.2s ease-in-out;
 }
 .close:hover{
-    color: #666;
-    transform: scale(1.1);
+    color: #000000;
 }
 #send-btn{
     margin-top: 25px;
@@ -454,6 +453,72 @@ hr{
     color: white;
     padding: 8px;
 }
+
+.legal-modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.legal-modal-content{
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    width: 30%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+.legal-modal.show{
+    display: flex;
+}
+.legal-modal.show .legal-modal-content{
+    transform: translateY(0);
+    opacity: 1;
+}
+.legal-modal.hide .legal-modal-content{
+    transform: translateY(-30px);
+    opacity: 0;
+}
+.legal-title{
+    margin-bottom: 10%;
+}
+#legal-text{
+    margin-top: 5%;
+}
+#legal-text p{
+    text-align: left;
+    margin-top: 2%;
+    width: 100%;
+}
+.legal-modal-content p{
+    font-size: 12px;
+}
+.legal-close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #343830;
+    background: none;
+    border: none;
+    padding: 5px;
+    transition: color 0.2s ease-in-out;
+}
+.legal-close:hover{
+    color: #000000;
+}
+
 /* Footer */
 footer{
     background-color: #181C14;
