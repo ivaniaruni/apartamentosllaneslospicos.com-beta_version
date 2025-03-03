@@ -452,6 +452,17 @@ hr{
     cursor: pointer;
     color: white;
     padding: 8px;
+    display: none;
+}
+.img-close_vertical{
+    position: absolute;
+    top: -10px;
+    right: 310px;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+    padding: 8px;
+    display: none;
 }
 
 .legal-modal{
